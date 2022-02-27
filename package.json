@@ -1,0 +1,33 @@
+{
+  "name": "bitmap",
+  "version": "1.0.0",
+  "description": "There is given a rectangular bitmap of size n*m. Each pixel of the bitmap is either white or",
+  "license": "MIT",
+  "author": "Amulya Kashyap<amulyakashyap09@gmail.com>",
+  "main": "src/index.ts",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" --write \"package.json\"",
+    "format:check": "prettier --check \"src/**/*.ts\" --check \"package.json\"",
+    "start": "tslint src/**/*.ts{,x} --fix && ts-node src/index.ts",
+    "test": "jest --coverage",
+    "lint": "tslint src/**/*.ts{,x} --fix"
+  },
+  "dependencies": {
+    "events": "^3.3.0",
+    "n-readlines": "^1.0.1",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "prettier": "^1.18.2",
+    "prettier-plugin-packagejson": "^2.0.1",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^8.6.2",
+    "tslint": "5.13.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-plugin-prettier": "2.0.1",
+    "typescript": "^3.7.5"
+  }
+}

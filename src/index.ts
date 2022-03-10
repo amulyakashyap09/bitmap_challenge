@@ -24,10 +24,12 @@ WHY : The reason is, in Breadth-First Search, every element is traversed only on
 (async function() {
   const processedInput: any = await Parser.parseInput("./input.txt");
   for (const element of processedInput) {
-    const rows = element[0];
-    const cols = element[1];
+    const rows = parseInt(element[0], 10);
+    const cols = parseInt(element[1], 10);
     const matrix = element[2];
-    const dist = DistanceCalculator.calculateDistance(matrix, rows, cols);
-    Parser.printSolution(rows, cols, dist);
+    if (rows && cols){
+      const dist = DistanceCalculator.calculateDistance(matrix, rows, cols);
+      Parser.printSolution(rows, cols, dist);
+    }
   }
 })();

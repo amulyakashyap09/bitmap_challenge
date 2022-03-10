@@ -12,7 +12,7 @@ export class DistanceCalculator {
     m: number,
     n: number,
   ): number[][] {
-    const dist = Array(m)
+    const dist = new Array(m)
       .fill(null)
       .map(() => Array(n).fill(0));
 
